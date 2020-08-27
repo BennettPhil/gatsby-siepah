@@ -27,7 +27,7 @@ const Nav = () => {
           <div className="flex items-center justify-between w-full md:w-auto">
             <a href="/" aria-label="Home">
               <Image
-                className="mr-4 mb-0"
+                className="mr-4 mb-0 w-12"
                 fluid={data.icon.childImageSharp.fluid}
                 alt="Software is Easy, People are Hard"
               />
@@ -77,7 +77,7 @@ const Nav = () => {
             <div>
               <a href="/" aria-label="Home">
                 <Image
-                  className="mr-4 mb-0"
+                  className="mr-4 mb-0 w-12"
                   fluid={data.icon.childImageSharp.fluid}
                   alt="Software is Easy, People are Hard"
                 />
