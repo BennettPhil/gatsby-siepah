@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog TailwindCSS`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-tailwindcss-demo.netlify.com/`,
+    title: `Software is Easy, People are Hard`,
+    author: `Phil Bennett`,
+    description: `A blog and podcast about the human aspects of tech leadership.`,
+    siteUrl: `https://softwareiseasypeoplearehard.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `phil_bennett`,
     },
   },
   plugins: [
