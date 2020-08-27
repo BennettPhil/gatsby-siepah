@@ -27,12 +27,8 @@ class Layout extends React.Component {
         <Nav></Nav>
         {header}
         <main className="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24">{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a className="text-blue-600" href="https://www.gatsbyjs.org">
-            Gatsby
-          </a>
+        <footer className="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24">
+          © 2019 - {new Date().getFullYear()} <a className="text-red-600" href="https://www.twitter.com/phil_bennett">Phil Bennett</a>
         </footer>
       </div>
     )

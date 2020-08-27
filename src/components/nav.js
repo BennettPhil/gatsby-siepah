@@ -28,7 +28,7 @@ const Nav = () => {
             <a href="/" aria-label="Home">
               <Image
                 className="mr-4 mb-0"
-                fluid={data.icon.childImageSharp.fixed}
+                fluid={data.icon.childImageSharp.fluid}
                 alt="Software is Easy, People are Hard"
                 style={{
                   minWidth: 50
