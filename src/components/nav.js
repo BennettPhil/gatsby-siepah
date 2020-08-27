@@ -12,8 +12,8 @@ const Nav = () => {
     query NavQuery {
       icon: file(absolutePath: { regex: "/icon.png/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 270, maxHeight: 270) {
+            ...GatsbyImageSharpFluid
           }
         }
       },
@@ -28,11 +28,8 @@ const Nav = () => {
             <a href="/" aria-label="Home">
               <Image
                 className="mr-4 mb-0"
-                fixed={data.icon.childImageSharp.fixed}
+                fluid={data.icon.childImageSharp.fluid}
                 alt="Software is Easy, People are Hard"
-                style={{
-                  minWidth: 50
-                }}
               />
             </a>
             <div className="-mr-2 flex items-center md:hidden">
@@ -81,11 +78,8 @@ const Nav = () => {
               <a href="/" aria-label="Home">
                 <Image
                   className="mr-4 mb-0"
-                  fixed={data.icon.childImageSharp.fixed}
+                  fluid={data.icon.childImageSharp.fluid}
                   alt="Software is Easy, People are Hard"
-                  style={{
-                    minWidth: 50
-                  }}
                 />
               </a>
             </div>
