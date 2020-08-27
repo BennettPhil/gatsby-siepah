@@ -1,21 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import { rhythm, scale } from "../utils/typography"
+import Header from './header'
+import Nav from './nav'
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, children, featuredPost } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
     if (location.pathname === rootPath) {
       header = (
-        <h1 className="text-6xl font-black font-sans mb-10 mt-0">
-          <Link className="shadow-none" to={`/`}>
-            {title}
-          </Link>
-        </h1>
+        <Header featuredPost={featuredPost}></Header>
       )
     } else {
       header = (
@@ -27,9 +23,10 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div className="max-w-2xl mx-auto px-5 py-10">
-        <header>{header}</header>
-        <main>{children}</main>
+      <div className="relative pt-6 pb-16 md:pb-20 lg:pb-24 xl:pb-32">
+        <Nav></Nav>
+        {header}
+        <main className="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24">{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
