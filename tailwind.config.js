@@ -50,6 +50,7 @@ module.exports = {
       },
     },
   },
+  purge: ["./src/**/*.js"],
   variants: {},
   plugins: [
     require('@tailwindcss/ui'),
