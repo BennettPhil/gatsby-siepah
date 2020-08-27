@@ -34,7 +34,7 @@ const Nav = () => {
             </a>
             <div className="-mr-2 flex items-center md:hidden">
               <button type="button"
-                      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 z-20 focus:text-gray-500 transition duration-150 ease-in-out"
                       id="main-menu" aria-label="Main menu" aria-haspopup="true"
               onClick={toggleMenu}>
                 <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ const Nav = () => {
       </span>
         </div>
       </nav>
-      <div className={isMenuOpen ? "opacity-100 scale-100 absolute top-0 inset-x-0 z-40 p-2 transition transform origin-top-right md:hidden": "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"}>
+      <div className={isMenuOpen ? "opacity-100 scale-100 absolute top-0 inset-x-0 z-40 p-2 transition transform origin-top-right md:hidden": "opacity-0 scale-95 absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"}>
       <div className="rounded-lg shadow-md">
         <div className="rounded-lg bg-white shadow-xs overflow-hidden" role="menu"
              aria-orientation="vertical" aria-labelledby="main-menu">
