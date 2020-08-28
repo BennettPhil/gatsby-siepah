@@ -59,7 +59,7 @@ module.exports = {
         podcastType: `episodic`,
         siteUrl: `https://www.softwareiseasypeoplearehard.com`,
         imageUrl: `https://www.softwareiseasypeoplearehard.com/podcast.jpg`,
-        feedUrl: `https://www.softwareiseasypeoplearehard.com/feed/podcast/`,
+        feedUrl: `https://www.softwareiseasypeoplearehard.com/feed/podcast.xml`,
         language: `en`,
         copyright: `Copyright © 2020 Philip Bennett`,
         authorName: `Phil Bennett`,
@@ -75,7 +75,7 @@ module.exports = {
         subCategory2: `Technology`,
         category3: `Business`,
         timeToLive: `60`,
-        outputPath: `/feed/podcast`
+        outputPath: `/feed/podcast.xml`
       },
     },
     `gatsby-transformer-sharp`,
