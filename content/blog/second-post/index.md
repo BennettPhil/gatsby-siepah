@@ -1,11 +1,9 @@
 ---
-type: podcast-episode
 status: published
 season: 1
 slug: /hello-world/
-guid: c30fddca-79fb-48b1-8ad5-69591149df8c
 episodeNumber: 1
-title: Hello World
+title: Second Post
 subtitle: The first ever episode.
 publicationDate: 2019-01-29
 author: Phil Bennett

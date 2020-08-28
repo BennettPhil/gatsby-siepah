@@ -30,10 +30,6 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <iframe title="{post.frontmatter.title} embed"
-                  src="https://player.blubrry.com/id/66570685/#time-0&darkOrLight-Light&shownotes-ffffff&shownotesBackground-000000&download-ffffff&downloadBackground-000000&subscribe-ffffff&subscribeBackground-000000&share-ffffff&shareBackground-000000"
-                  scrolling="no" width="100%" height="138px" frameBorder="0" className="my-3 text-base text-gray-900 max-w-2xl mx-auto"></iframe>
-
           <div className="markdown my-3 text-base text-gray-900 max-w-2xl mx-auto"><MDXRenderer>{post.body}</MDXRenderer></div>
 
           <hr className="h-px mb-8" />
@@ -43,16 +39,7 @@ class BlogPostTemplate extends React.Component {
         </article>
 
         <nav>
-          <ul
-            className="flex flex-wrap justify-between mb-8"
-            // style={{
-            //   display: `flex`,
-            //   flexWrap: `wrap`,
-            //   justifyContent: `space-between`,
-            //   listStyle: `none`,
-            //   padding: 0,
-            // }}
-          >
+          <ul className="flex flex-wrap justify-between mb-8">
             <li>
               {previous && (
                 <Link
