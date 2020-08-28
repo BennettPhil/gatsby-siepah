@@ -72,10 +72,9 @@ module.exports = {
         category1: `Business`,
         subCategory1: `Management`,
         category2: `Business`,
-        subCategory2: `Technology`,
-        category3: `Business`,
+        category3: `Technology`,
         timeToLive: `60`,
-        outputPath: `/feed/podcast.xml`
+        outputPath: `podcast.xml`
       },
     },
     `gatsby-transformer-sharp`,
