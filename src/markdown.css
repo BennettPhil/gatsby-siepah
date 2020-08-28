@@ -28,14 +28,18 @@
 }
 
 .markdown > blockquote {
-  @apply -ml-8 mb-8;
+  @apply mb-8 ml-3 pl-5 border-l-4 border-red-500;
 }
 
 .markdown ul {
-  @apply list-disc mb-8;
+  @apply list-disc mb-8 ml-8;
+}
+
+.markdown ul ul, .markdown ul ol {
+  @apply mb-0
 }
 
 .markdown ol {
-  @apply list-decimal mb-8;
+  @apply list-decimal mb-8 ml-8;
 }
 

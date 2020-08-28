@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Header from './header'
 import Nav from './nav'
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children, featuredPost } = this.props
+    const { location, children, featuredPost } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -14,13 +13,7 @@ class Layout extends React.Component {
         <Header featuredPost={featuredPost}></Header>
       )
     } else {
-      header = (
-        <h3 className="text-2xl font-sans font-black mt-0">
-          <Link className="shadow-none" to={`/`}>
-            {title}
-          </Link>
-        </h3>
-      )
+      header = false
     }
     return (
       <div className="relative pt-6 pb-16 md:pb-20 lg:pb-24 xl:pb-32">

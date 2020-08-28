@@ -1,8 +1,14 @@
 ---
+number: 1
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 featuredImage: ./salty_egg.jpg
+url: https://media.blubrry.com/softwareiseasypeoplearehard/content.blubrry.com/softwareiseasypeoplearehard/SIAPAH-S01E01.mp3
+size: 82000
+categories: 
+    - Business
+    - Technology  
 ---
 
 This is my first post on my new fake blog! How exciting!
