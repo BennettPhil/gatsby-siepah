@@ -77,13 +77,6 @@ module.exports = {
         outputPath: `podcast.xml`
       },
     },
-    {
-      resolve: `gatsby-plugin-routes`,
-      options: {
-        // this is the path to your routes configuration file
-        path: `${__dirname}/src/routes.js`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
