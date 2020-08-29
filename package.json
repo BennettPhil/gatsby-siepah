@@ -25,6 +25,7 @@
     "gatsby-plugin-podcast-rss-feed": "^0.1.5",
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-routes": "^1.0.0",
     "gatsby-plugin-sharp": "^2.6.29",
     "gatsby-remark-copy-linked-files": "^2.3.12",
     "gatsby-remark-images": "^3.3.27",
