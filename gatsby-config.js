@@ -4,6 +4,7 @@ module.exports = {
     author: `Phil Bennett`,
     description: `A blog and podcast about the human aspects of tech leadership.`,
     siteUrl: `https://softwareiseasypeoplearehard.netlify.app/`,
+    ogImage: `og-image.jpg`,
     social: {
       twitter: `phil_bennett`,
     },

@@ -9,6 +9,7 @@ class Index extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const ogImage = data.site.siteMetadata.ogImage
     const posts = data.allMdx.edges
 
     return (
@@ -17,7 +18,10 @@ class Index extends React.Component {
         title={siteTitle}
         featuredPost={posts.shift().node}
       >
-        <SEO title="Software is Easy, People are Hard" />
+        <SEO
+          title="Software is Easy, People are Hard"
+          facebookImage={ogImage}
+        />
         <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
           {posts.map(({ node }) => {
             return <Post key={node.fields.slug} post={node}></Post>
@@ -35,6 +39,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        ogImage
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 7) {
