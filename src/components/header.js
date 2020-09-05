@@ -27,63 +27,63 @@ class Header extends React.Component {
                 <p className="text-base font-medium text-gray-900">
                   Categories:
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/push-people-a-little-then-some-more"
                   >
                     Push people a little, then some more
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/create-an-environment-of-safety"
                   >
                     Create an environment of safety
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/manage-your-relationships"
                   >
                     Manage your relationships
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/get-great-at-giving-feedback"
                   >
                     Get great at giving feedback
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/manage-expectations"
                   >
                     Manage expectations
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/your-team-will-mimic-you-lead-by-example"
                   >
                     Your team will mimic you, lead by example
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/arseholes-are-arseholes-however-talented-they-are"
                   >
                     Arseholes are arseholes, however talented they are
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold"
                     to="/category/consider-your-biases"
                   >
                     Consider your biases
                   </Link>
                   ,&nbsp;
                   <Link
-                    className="text-red-500 underline"
+                    className="text-red-600 underline font-semibold bold"
                     to="/category/balance-your-team"
                   >
                     Balance your team

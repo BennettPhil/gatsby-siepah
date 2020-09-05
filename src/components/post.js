@@ -20,7 +20,7 @@ class Post extends React.Component {
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
             {post.frontmatter.category && (
-              <p className="text-md leading-5 font-medium text-red-600">
+              <p className="text-lg leading-5 font-semibold text-red-600">
                 <Link
                   to={
                     `/category/` +
@@ -39,7 +39,7 @@ class Post extends React.Component {
               </p>
             )}
             <Link to={post.fields.slug} className="block">
-              <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              <h3 className="mt-2 text-2xl leading-7 font-semibold text-gray-900">
                 {post.frontmatter.title}
               </h3>
               <p className="mt-3 text-base leading-6 text-gray-500">
