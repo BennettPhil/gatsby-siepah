@@ -12,7 +12,7 @@ class Post extends React.Component {
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
         <div className="flex-shrink-0">
           <Image
-            className="h-48 w-full object-cover"
+            className="w-full object-cover"
             fluid={featuredImgFluid}
             alt={post.frontmatter.title}
           />
@@ -43,7 +43,7 @@ class Post extends React.Component {
                 {post.frontmatter.title}
               </h3>
               <p className="mt-3 text-base leading-6 text-gray-500">
-                {post.excerpt}
+                {post.frontmatter.description}
               </p>
             </Link>
           </div>

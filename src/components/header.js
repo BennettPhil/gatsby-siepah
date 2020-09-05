@@ -28,14 +28,14 @@ class Header extends React.Component {
                   Categories:
                   <Link
                     className="text-red-500 underline"
-                    to="/categoy/push-people-a-little-then-some-more"
+                    to="/category/push-people-a-little-then-some-more"
                   >
                     Push people a little, then some more
                   </Link>
                   ,&nbsp;
                   <Link
                     className="text-red-500 underline"
-                    to="/cateogry/create-an-environment-of-safety"
+                    to="/category/create-an-environment-of-safety"
                   >
                     Create an environment of safety
                   </Link>

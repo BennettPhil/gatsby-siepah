@@ -56,7 +56,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 900,
             },
           },
           {
@@ -68,11 +68,23 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-embedder`,
+            options: {
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                // The service-specific options by the name of the service
+              },
+            },
+          },
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
