@@ -1,24 +1,26 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Post from '../components/post'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Post from "../components/post"
 
 class Index extends React.Component {
-  render () {
+  render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle} featuredPost={posts.shift().node}>
-        <SEO title="Software is Easy, People are Hard"/>
+      <Layout
+        showHeader={true}
+        title={siteTitle}
+        featuredPost={posts.shift().node}
+      >
+        <SEO title="Software is Easy, People are Hard" />
         <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
           {posts.map(({ node }) => {
-            return (
-              <Post key={node.fields.slug} post={node}></Post>
-            )
+            return <Post key={node.fields.slug} post={node}></Post>
           })}
         </div>
       </Layout>
@@ -35,7 +37,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(sort: { fields: [frontmatter___title], order: DESC } limit: 7) {
+    allMdx(sort: { fields: [frontmatter___title], order: DESC }, limit: 7) {
       edges {
         node {
           excerpt
@@ -46,6 +48,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            category
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 450, quality: 80) {

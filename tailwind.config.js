@@ -2,6 +2,18 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   theme: {
+    typography: {
+      default: {
+        css: {
+          a: {
+            color: '#FF3B41',
+            '&:hover': {
+              color: '#4D1214',
+            },
+          },
+        },
+      },
+    },
     extend: {
       colors: {
         red: {
@@ -54,5 +66,6 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/ui'),
+    require('@tailwindcss/typography'),
   ],
 }

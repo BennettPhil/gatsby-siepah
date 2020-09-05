@@ -1,6 +1,3 @@
-
-
-
 module.exports = {
   siteMetadata: {
     title: `Software is Easy, People are Hard`,
@@ -33,7 +30,7 @@ module.exports = {
       category2: `Business`,
       category3: `Technology`,
       timeToLive: `60`,
-      outputPath: `podcast.xml`
+      outputPath: `podcast.xml`,
     },
   },
   plugins: [

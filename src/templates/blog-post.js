@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <div className="markdown my-3 text-base text-gray-900 max-w-2xl mx-auto"><MDXRenderer>{post.body}</MDXRenderer></div>
+          <div className="prose my-3 text-base text-gray-900 max-w-2xl mx-auto"><MDXRenderer>{post.body}</MDXRenderer></div>
 
           <hr className="h-px mb-8" />
           <footer>
