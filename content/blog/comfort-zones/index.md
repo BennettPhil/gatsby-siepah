@@ -4,6 +4,7 @@ status: published
 season: 1
 slug: /comfort-zones/
 episodeNumber: 1
+guid: 1
 title: "Comfort Zones: Pushing Your Team to Greatness, One Step at a Time."
 subtitle: Being outside of your comfort zone is, well, uncomfortable.
 publicationDate: 2019-08-15

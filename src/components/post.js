@@ -19,23 +19,25 @@ class Post extends React.Component {
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
-            <p className="text-md leading-5 font-medium text-red-600">
-              <Link
-                to={
-                  `/category/` +
-                  post.frontmatter.category
-                    .match(
-                      /[A-Z]{2,}(?=[A-Z][a-z0-9]*|\\b)|[A-Z]?[a-z0-9]*|[A-Z]|[0-9]+/g
-                    )
-                    .filter(Boolean)
-                    .map(x => x.toLowerCase())
-                    .join("-")
-                }
-                className="hover:underline"
-              >
-                {post.frontmatter.category}
-              </Link>
-            </p>
+            {post.frontmatter.category && (
+              <p className="text-md leading-5 font-medium text-red-600">
+                <Link
+                  to={
+                    `/category/` +
+                    post.frontmatter.category
+                      .match(
+                        /[A-Z]{2,}(?=[A-Z][a-z0-9]*|\\b)|[A-Z]?[a-z0-9]*|[A-Z]|[0-9]+/g
+                      )
+                      .filter(Boolean)
+                      .map(x => x.toLowerCase())
+                      .join("-")
+                  }
+                  className="hover:underline"
+                >
+                  {post.frontmatter.category}
+                </Link>
+              </p>
+            )}
             <Link to={post.fields.slug} className="block">
               <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
                 {post.frontmatter.title}
