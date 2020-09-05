@@ -3,7 +3,7 @@ module.exports = {
     title: `Software is Easy, People are Hard`,
     author: `Phil Bennett`,
     description: `A blog and podcast about the human aspects of tech leadership.`,
-    siteUrl: `https://softwareiseasypeoplearehard.netlify.app/`,
+    siteUrl: `https://www.softwareiseasypeoplearehard.com`,
     ogImage: `/og-image.jpg`,
     social: {
       twitter: `phil_bennett`,
