@@ -4,7 +4,7 @@ author: Phil Bennett
 date: "2020-07-08T08:00:00.000Z"
 description: "Want to understand what defines you as a leader, use this step by step process to define your own leadership manifesto."
 featuredImage: ./featured-image.jpg
-ogImage: ./og-image.jpg
+ogImage: ./og-image.png
 category: "Push people, a little, then some more"
 categories: 
     - "Push people, a little, then some more" 
