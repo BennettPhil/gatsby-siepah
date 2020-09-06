@@ -1,5 +1,5 @@
 ---
-title: "The Friend Zone: Not Just a Problem for Dudebros."
+title: "Are you values a motivational poster or a battle standard."
 author: Phil Bennett
 date: "2020-06-24T08:00:00.000Z"
 description: "Are your company values a boring motivational poster stuck on the wall, or a battle standard that you lead your team under?"

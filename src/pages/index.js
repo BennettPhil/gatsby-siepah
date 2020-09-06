@@ -13,17 +13,13 @@ class Index extends React.Component {
     const posts = data.allMdx.edges
 
     return (
-      <Layout
-        showHeader={true}
-        title={siteTitle}
-        featuredPost={posts.shift().node}
-      >
+      <Layout showHeader={true} title={siteTitle} featuredPost={posts[0].node}>
         <SEO
           title="Software is Easy, People are Hard"
           facebookImage={ogImage}
         />
         <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-          {posts.map(({ node }) => {
+          {posts.slice(1, 7).map(({ node }) => {
             return <Post key={node.fields.slug} post={node}></Post>
           })}
         </div>
