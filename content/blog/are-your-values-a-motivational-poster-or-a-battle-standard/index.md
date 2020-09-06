@@ -4,6 +4,7 @@ author: Phil Bennett
 date: "2020-06-24T08:00:00.000Z"
 description: "Are your company values a boring motivational poster stuck on the wall, or a battle standard that you lead your team under?"
 featuredImage: ./featured-image.jpg
+ogImage: ./og-image.jpg
 category: "Push people, a little, then some more"
 categories: 
     - "Push people, a little, then some more"

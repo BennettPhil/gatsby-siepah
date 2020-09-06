@@ -4,6 +4,7 @@ author: Phil Bennett
 date: "2020-06-03T08:00:00.000Z"
 description: "10x developers are a risk I'm not willing to take. They are not a sustainable rock to build your team on."
 featuredImage: ./featured-image.jpg
+featuredImage: ./og-image.jpg
 category: "Balance your team"
 categories: 
     - "Balance your team" 

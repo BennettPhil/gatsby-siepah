@@ -4,6 +4,7 @@ author: Phil Bennett
 date: "2020-06-16T08:00:00.000Z"
 description: "Quit worrying about what your git branch is called and hire for diversity already."
 featuredImage: ./featured-image.jpg
+ogImage: ./og-image.jpg
 category: "Balance your team"
 categories: 
     - "Balance your team" 

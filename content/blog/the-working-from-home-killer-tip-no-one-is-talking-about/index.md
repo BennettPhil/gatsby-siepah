@@ -4,6 +4,7 @@ author: Phil Bennett
 date: "2020-06-10T08:00:00.000Z"
 description: "Everyone is talking about their great tips for 'Working From Home' but there is one killer tool we're not talking about. "
 featuredImage: ./featured-image.jpg
+ogImage: ./og-image.jpg
 category: "Get great at giving feedback"
 categories: 
     - "Get great at giving feedback" 

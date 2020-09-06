@@ -4,6 +4,7 @@ author: Phil Bennett
 date: "2020-06-09T08:00:00.000Z"
 description: "At Klarna, we hire amazing people. Giving amazing people permission to be creative and own their decisions creates great products."
 featuredImage: ./featured-image.jpg
+ogImage: ./og-image.jpg
 category: "Push People, a little, then some more"
 categories: 
     - "Push People, a little, then some more" 

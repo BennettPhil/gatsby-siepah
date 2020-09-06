@@ -10,15 +10,15 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
     const { previous, next } = this.props.pageContext
-
+    const ogImage = post.frontmatter.ogImage
+      ? post.frontmatter.ogImage.childImageSharp.fixed.src
+      : post.frontmatter.featuredImage.childImageSharp.fixed.src
     return (
       <Layout location={this.props.location}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          facebookImage={
-            post.frontmatter.featuredImage.childImageSharp.fixed.src
-          }
+          facebookImage={ogImage}
         />
         <article>
           <header className="container mx-auto px-0 py-12 sm:px-0 lg:px-8 mt-8 max-w-screen-xl sm:mt-12 md:mt-10 xl:mt-12">
@@ -100,6 +100,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         category
         featuredImage {
+          childImageSharp {
+            fixed(width: 1200, height: 630, quality: 80) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        ogImage {
           childImageSharp {
             fixed(width: 1200, height: 630, quality: 80) {
               ...GatsbyImageSharpFixed

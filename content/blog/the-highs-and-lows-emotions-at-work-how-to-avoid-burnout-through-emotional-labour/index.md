@@ -4,6 +4,7 @@ author: Phil Bennett
 date: "2020-07-01T08:00:00.000Z"
 description: "It's easier to burn someone out through emotional labour than physical labour. This isn't something we can keep ignoring."
 featuredImage: ./featured-image.jpg
+ogImage: ./og-image.jpg
 category: "Create an Environment of Safety"
 categories: 
     - "Create an Environment of Safety" 
