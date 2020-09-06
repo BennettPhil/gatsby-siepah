@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 class Post extends React.Component {
   render() {
-    const { post } = this.props
+    const { post, loading } = this.props
 
     let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
 
@@ -14,6 +14,7 @@ class Post extends React.Component {
           <Image
             className="w-full object-cover"
             fluid={featuredImgFluid}
+            loading={loading ? loading : "lazy"}
             alt={post.frontmatter.title}
           />
         </div>

@@ -33,6 +33,7 @@ const Nav = () => {
                 style={{
                   minWidth: 50,
                 }}
+                loading="eager"
               />
             </Link>
             <div className="-mr-2 flex items-center md:hidden">
