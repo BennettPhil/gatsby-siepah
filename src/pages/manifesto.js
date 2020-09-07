@@ -11,7 +11,7 @@ class Manifesto extends React.Component {
 
     return (
       <Layout showHeader={false} title={siteTitle}>
-        <SEO title="Manifesto" />
+        <SEO title="Small Team Lead Manifesto" />
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-6">
             <p className="text-base text-center leading-6 text-red-500 font-semibold tracking-wide uppercase">

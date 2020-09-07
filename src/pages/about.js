@@ -12,7 +12,7 @@ class About extends React.Component {
 
     return (
       <Layout showHeader={false} title={siteTitle}>
-        <SEO title="About Me" />
+        <SEO title="About Me - Phil Bennett" />
         <h1 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
           About Me
         </h1>
