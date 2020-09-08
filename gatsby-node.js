@@ -136,7 +136,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create blog posts pages.
   const posts = result.data.allMdx.edges
 
-  createBlog(actions.createPage, result.data.allMdx.edges)
+  // createBlog(actions.createPage, result.data.allMdx.edges)
   createCategoryPages(actions.createPage, result.data.allMdx.edges)
 
   posts.forEach((post, index) => {

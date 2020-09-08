@@ -81,10 +81,10 @@ const Nav = () => {
               About Me
             </Link>
             <Link
-              to="/blog"
+              to="/posts"
               className="ml-10 font-medium text-gray-500 hover:text-red-500 transition duration-150 ease-in-out"
             >
-              Blog
+              All Posts
             </Link>
             {/*<Link href="/podcast"*/}
             {/*   className="ml-10 font-medium text-gray-500 hover:text-red-500 transition duration-150 ease-in-out">Podcast</Link>*/}
@@ -209,11 +209,11 @@ const Nav = () => {
                 About Me
               </Link>
               <Link
-                to="/blog"
+                to="/posts"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
-                Blog
+                All Posts
               </Link>
               {/*<Link to="/podcast"*/}
               {/*   className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"*/}
